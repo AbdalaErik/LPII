@@ -45,6 +45,8 @@ public class Exercicio4 {
 	        Salario.add(Calculo(HorasTrabalhadas.get(i), ValorPorHora.get(i)));
 	        
 	        System.out.println("-----------------------------------------------------------------\n");
+
+		System.out.println(" # Inserção de informações para o " + (i + 1) + "º funcionário\n");
 	    
 	        System.out.println(" O número de identificação do funcionário é: " + idFuncionario.get(i) + "\n");
 	    
