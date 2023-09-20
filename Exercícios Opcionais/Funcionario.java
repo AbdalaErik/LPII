@@ -6,7 +6,6 @@
 // Discente: Erik Bolonha Abdala
 
 import java.util.*;
-import java.util.ArrayList;
 
 public class Funcionario {
     
