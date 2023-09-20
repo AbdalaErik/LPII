@@ -41,38 +41,38 @@ public class Exercicio2 {
         
     }
     
-	public static void main(String[] args) {
-	    
-	    double A, B, C, Area;
-	    
-	    Scanner sc = new Scanner(System.in);
-	    
-	    System.out.println(" ===== Formas Geométricas (Cálculo das Áreas) =====\n");
-	    
-	    System.out.print(" > Insira o valor de A: ");
-	    
-	    A = sc.nextDouble(); System.out.println();
-	    
-	    System.out.print(" > Insira o valor de B: ");
-	    
-	    B = sc.nextDouble(); System.out.println();
-	    
-	    System.out.print(" > Insira o valor de C: ");
-	    
-	    C = sc.nextDouble(); System.out.println();
-	    
-	    Area = Triangulo(A, C); System.out.println(" TRIÂNGULO: " + String.format("%.3f", Area) + "\n");
-	    
-	    Area = Circulo(C); System.out.println(" CÍRCULO: " + String.format("%.3f", Area) + "\n");
-	    
-	    Area = Trapezio(A, B, C); System.out.println(" TRAPÉZIO: " + String.format("%.3f", Area) + "\n");
-	    
-	    Area = Quadrado(B); System.out.println(" QUADRADO: " + String.format("%.3f", Area) + "\n");
-	    
-	    Area = Retangulo(A, B); System.out.println(" RETÂNGULO: " + String.format("%.3f", Area));
-	    
-	    sc.close();
-		
-	}
-	
+    public static void main(String[] args) {
+        
+        double A, B, C, Area;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println(" ===== Formas Geométricas (Cálculo das Áreas) =====\n");
+        
+        System.out.print(" > Insira o valor de A: ");
+        
+        A = sc.nextDouble(); System.out.println();
+        
+        System.out.print(" > Insira o valor de B: ");
+        
+        B = sc.nextDouble(); System.out.println();
+        
+        System.out.print(" > Insira o valor de C: ");
+        
+        C = sc.nextDouble(); System.out.println();
+        
+        Area = Triangulo(A, C); System.out.println(" TRIÂNGULO: " + String.format("%.3f", Area) + "\n");
+        
+        Area = Circulo(C); System.out.println(" CÍRCULO: " + String.format("%.3f", Area) + "\n");
+        
+        Area = Trapezio(A, B, C); System.out.println(" TRAPÉZIO: " + String.format("%.3f", Area) + "\n");
+        
+        Area = Quadrado(B); System.out.println(" QUADRADO: " + String.format("%.3f", Area) + "\n");
+        
+        Area = Retangulo(A, B); System.out.println(" RETÂNGULO: " + String.format("%.3f", Area));
+        
+        sc.close();
+        
+    }
+    
 }
