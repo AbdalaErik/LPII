@@ -11,21 +11,21 @@ class Exercicio6 {
     
     static void Menu () {
         
-        System.out.println("|================== Calculadora ==================|");
-        System.out.println("|                                                 |");
-        System.out.println("| + Operações disponíveis:                        |");
-        System.out.println("|                                                 |");
-        System.out.println("| 1 - Soma                                        |");
-        System.out.println("|                                                 |");
-        System.out.println("| 2 - Subtração                                   |");
-        System.out.println("|                                                 |");
-        System.out.println("| 3 - Multiplicação                               |");
-        System.out.println("|                                                 |");
-        System.out.println("| 4 - Divisão                                     |");
-        System.out.println("|                                                 |");
-        System.out.println("| 5 - Sair                                        |");
-        System.out.println("|                                                 |");
-        System.out.println("|=================================================|\n");
+        System.out.println("|=============== Calculadora Básica ===============|");
+        System.out.println("|                                                  |");
+        System.out.println("| + Operações disponíveis:                         |");
+        System.out.println("|                                                  |");
+        System.out.println("| 1 - Soma                                         |");
+        System.out.println("|                                                  |");
+        System.out.println("| 2 - Subtração                                    |");
+        System.out.println("|                                                  |");
+        System.out.println("| 3 - Multiplicação                                |");
+        System.out.println("|                                                  |");
+        System.out.println("| 4 - Divisão                                      |");
+        System.out.println("|                                                  |");
+        System.out.println("| 5 - Sair                                         |");
+        System.out.println("|                                                  |");
+        System.out.println("|==================================================|\n");
         System.out.println("  - Escolha uma operação a ser realizada:");
         System.out.print("\n  > ");
         
@@ -131,7 +131,7 @@ class Exercicio6 {
                     
                     resultado = Soma();
                     
-                    System.out.println(" O resultado da soma é: " + resultado + "\n");
+                    System.out.println(" O resultado da soma é: " + String.format("%.3f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -147,7 +147,7 @@ class Exercicio6 {
                     
                     resultado = Subtracao();
                     
-                    System.out.println(" O resultado da subtração é: " + resultado + "\n");
+                    System.out.println(" O resultado da subtração é: " + String.format("%.3f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -163,7 +163,7 @@ class Exercicio6 {
                     
                     resultado = Multiplicacao();
                     
-                    System.out.println(" O resultado da multiplicação é: " + resultado + "\n");
+                    System.out.println(" O resultado da multiplicação é: " + String.format("%.3f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -179,7 +179,7 @@ class Exercicio6 {
                     
                     resultado = Divisao();
                     
-                    System.out.println(" O resultado da divisão é: " + resultado + "\n");
+                    System.out.println(" O resultado da divisão é: " + String.format("%.3f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
