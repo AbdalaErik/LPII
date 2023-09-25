@@ -19,14 +19,14 @@ Entrada        Saída                 Entrada           Saída
                QUADRADO: 16.000                        QUADRADO: 108.160
                RETANGULO: 12.000                       RETANGULO: 132.080
 
-Exercício3: Fazer um programa que leia através de variáveis dois funcionários: onde este deve ler o número de um funcionário,
+Exercício 03: Fazer um programa que leia através de variáveis dois funcionários: onde este deve ler o número de um funcionário,
 seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número
 e o salário do funcionário, com duas casas decimais. Utilize variáveis comuns sem a criação de uma classe funcionário.
 
-Exercício4: Altere os parâmetros da atividade 3 para que leia os dados de dois funcionários, utilizando um vetor pra armazenar
+Exercício 04: Altere os parâmetros da atividade 3 para que leia os dados de dois funcionários, utilizando um vetor pra armazenar
 sem a criação de uma classe funcionário.
 
-Exercício5: Altere os parâmetros da atividade 3 e 4 para leia um funcionário, mas codificando de forma que ele seja estruturada
+Exercício 05: Altere os parâmetros da atividade 3 e 4 para leia um funcionário, mas codificando de forma que ele seja estruturada
 a partir de uma classe funcionario.
 
 Exercício 06: Faça um programa calculadora básica: soma, multiplicação, divisão e subtração de dois valores, onde o usuário deve
