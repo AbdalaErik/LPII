@@ -31,7 +31,7 @@ public class carro extends automovel {
         System.out.println(" > Preço: R$ " + String.format("%.2f", this.preco));
         System.out.println(" > Características do pneu:");
         System.out.println(" - Aro: " + p.aro + " polegadas");
-        System.out.println(" - Modelo: " + p.modelo);
+        System.out.println(" - Modelo: " + p.modelo + "\n");
         
     }
     
