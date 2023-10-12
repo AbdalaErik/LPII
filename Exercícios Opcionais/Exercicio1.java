@@ -1,9 +1,11 @@
 // Lista de Exercícios Opcionais - Exercício 1
 // IFSULDEMINAS - Câmpus Muzambinho
-// Ciência da Computação - 4º Período (2023/02)
+// Ciência da Computação - 4º Período (2023/2)
 // Linguagens de Programação II (LPII)
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
+
+// Lendo 2 valores inteiros e mostrando a soma de ambos.
 
 import java.util.Scanner;
 
@@ -15,7 +17,7 @@ public class Exercicio1 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(" ===== Somatório de Valores =====\n");
+        System.out.println("===== Somatório de Valores =====\n");
 
         System.out.print(" > Insira o primeiro valor: ");
 
