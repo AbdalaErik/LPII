@@ -1,9 +1,11 @@
 // Lista de Exercícios Opcionais - Exercício 7
 // IFSULDEMINAS - Câmpus Muzambinho
-// Ciência da Computação - 4º Período (2023/02)
+// Ciência da Computação - 4º Período (2023/2)
 // Linguagens de Programação II (LPII)
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
+
+// Criando uma calculadora de áreas de figuras planas (triângulo, círculo, trapézio, quadrado e retângulo).
 
 import java.util.Scanner;
 
