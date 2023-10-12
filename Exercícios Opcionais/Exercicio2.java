@@ -1,9 +1,11 @@
 // Lista de Exercícios Opcionais - Exercício 2
 // IFSULDEMINAS - Câmpus Muzambinho
-// Ciência da Computação - 4º Período (2023/02)
+// Ciência da Computação - 4º Período (2023/2)
 // Linguagens de Programação II (LPII)
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
+
+// Lendo 3 valores (A, B e C) e calculando áreas de figuras planas.
 
 import java.util.Scanner;
 
