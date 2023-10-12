@@ -1,9 +1,11 @@
 // Lista de Exercícios Opcionais - Exercício 6
 // IFSULDEMINAS - Câmpus Muzambinho
-// Ciência da Computação - 4º Período (2023/02)
+// Ciência da Computação - 4º Período (2023/2)
 // Linguagens de Programação II (LPII)
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
+
+// Criando uma calculadora com operações básicas (soma, subtração, multiplicação e divisão).
 
 import java.util.Scanner;
 
