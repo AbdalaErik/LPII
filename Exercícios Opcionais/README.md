@@ -8,7 +8,7 @@
 <br /></br>
 |   Exemplo 1  |   Exemplo 2  |   Exemplo 3  |
 | :----------: | :----------: | :----------: |
-|<table> <tr><th> Entrada </th><th> Saída </th></tr><tr><td> <center> 10 </center> </td><td>  <center> 40 </center> </td></tr> <tr><td> <center> 30 </center> </td><td> </table>| <table> <tr><th> Entrada </th><th> Saída </th></tr><tr><td> <center> -30 </center> </td><td> <center> -20 </center> </td></tr> <tr><td> <center> 10 </center> </td><td> </table>|<table> <tr><th> Entrada </th><th> Saída </th></tr><tr><td> <center> 0 </center> </td><td>  <center> 0 </center> </td></tr> <tr><td> <center> 0 </center> </td><td> </table>
+|<table> <tr> <th> Entrada </th> <th> Saída </th> </tr> <tr> <td> <div align="center"> 10 </div> </td> <td> <div align="center"> 40 </div> </td> </tr> <tr> <td> <div align="center"> 30 </div> </td> <td> </table>| <table> <tr> <th> Entrada </th> <th> Saída </th> </tr> <tr> <td> <div align="center"> -30 </div> </td> <td> <div align="center"> -20 </div> </td> </tr> <tr> <td> <div align="center"> 10 </div> </td> <td> </table>|<table> <tr> <th> Entrada </th> <th> Saída </th> </tr> <tr> <td> <div align="center"> 0 </div> </td> <td> <div align="center"> 0 </div> </td> </tr> <tr><td> <div align="center"> 0 </div> </td> <td> </table>
 
 <br /></br>
 **Exercício 02:** Fazer um programa que leia três valores: A, B e C. Em seguida, calcule e mostre:
@@ -25,7 +25,7 @@
 <br /></br>
 |   Exemplo 1  |   Exemplo 2  |
 | :----------: | :----------: |
-|<table> <tr><th> Entrada </th><th> Saída </th></tr><tr><td> <center> 3.0 4.0 5.2 </center> </td><td> TRIANGULO: 7.800 </td></tr> <tr><td></td><td> CIRCULO: 84.949  </td></tr> <tr> <td></td> <td> TRAPEZIO: 18.200 </td></tr> <tr> <td></td> <td> QUADRADO: 16.000 </td> </tr><td></td><td> RETANGULO: 12.000 </td></table>|<table> <tr><th> Entrada </th><th> Saída </th></tr><tr><td> <center> 12.7 10.4 15.2 </center> </td><td> TRIANGULO: 96.520 </td></tr> <tr><td></td><td> CIRCULO: 725.833  </td></tr> <tr> <td></td> <td> TRAPEZIO: 175.560 </td></tr> <tr> <td></td> <td> QUADRADO: 108.160 </td> </tr><td></td><td> RETANGULO: 132.080 </td></table>
+|<table> <tr> <th> Entrada </th> <th> Saída </th> </tr> <tr> <td> <div align="center"> 3.0 4.0 5.2 </div> </td> <td> TRIANGULO: 7.800 </td> </tr> <tr> <td> </td> <td> CIRCULO: 84.949  </td> </tr> <tr> <td> </td> <td> TRAPEZIO: 18.200 </td> </tr> <tr> <td> </td> <td> QUADRADO: 16.000 </td> </tr> <td> </td> <td> RETANGULO: 12.000 </td> </table>|<table> <tr> <th> Entrada </th> <th> Saída </th> </tr> <tr> <td> <div align="center"> 12.7 10.4 15.2 </div> </td> <td> TRIANGULO: 96.520 </td> </tr> <tr> <td> </td> <td> CIRCULO: 725.833 </td> </tr> <tr> <td> </td> <td> TRAPEZIO: 175.560 </td> </tr> <tr> <td> </td> <td> QUADRADO: 108.160 </td> </tr> <td> </td> <td> RETANGULO: 132.080 </td> </table>
 
 <br /></br>
 **Exercício 03:** Fazer um programa que leia através de variáveis dois funcionários: onde este deve ler o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais. Utilize variáveis comuns sem a criação de uma classe funcionário.
