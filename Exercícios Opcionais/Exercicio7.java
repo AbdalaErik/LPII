@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 class Exercicio7 {
     
-    static void Menu () {
+    public static void Menu () {
         
         System.out.println("|================ Calculadora de Áreas ================|");
         System.out.println("|                                                      |");
