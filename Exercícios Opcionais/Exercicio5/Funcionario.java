@@ -47,7 +47,7 @@ public class Funcionario {
 
     // Método para calcular o salário do funcionário (Horas trabalhadas * Valor por hora):
     
-    public static double Calculo(double x, double y) {
+    public double Calculo(double x, double y) {
         
         return x * y;
         

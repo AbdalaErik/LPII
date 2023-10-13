@@ -27,9 +27,7 @@ class Exercicio5 {
 
         Funcionario myObj;
         
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("================== Informações do Funcionário ==================\n");
+        Scanner sc = new Scanner(System.in); System.out.println();
         
         for (int i = 0; i < n; i++) {
 
@@ -51,7 +49,7 @@ class Exercicio5 {
         
             myObj = new Funcionario(id, horas, valor);
 
-            // Armazenando o novo objeto no ArrayList ListaFuncionario:
+            // Armazenando o novo objeto no ArrayList Lista:
             
             Lista.add(myObj);
             
@@ -59,17 +57,17 @@ class Exercicio5 {
             
         }
         
-        System.out.println("================= Resultados para Funcionários =================\n");
+        System.out.println("================================================================\n");
         
         for (int i = 0; i < n; i++) {
             
             System.out.println(" # Resultados para o " + (i + 1) + "º funcionário\n");
+
+            // Percorrendo e imprimindo todos os objetos armazenados em ArrayList Lista por meio dos métodos da classe Funcionario:
         
             System.out.println(" O número de identificação do funcionário é: " + Lista.get(i).getidFuncionario() + "\n");
         
-            System.out.println(" O salário do funcionário é: R$ " + String.format("%.2f", Lista.get(i).getSalario()));
-            
-            if (i == 0 || i == n - 1) System.out.println();
+            System.out.println(" O salário do funcionário é: R$ " + String.format("%.2f", Lista.get(i).getSalario()) + "\n");
             
             if (i != n - 1) System.out.println("----------------------------------------------------------------\n");
             

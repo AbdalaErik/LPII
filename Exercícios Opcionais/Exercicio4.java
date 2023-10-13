@@ -1,13 +1,17 @@
 // Lista de Exercícios Opcionais - Exercício 4
 // IFSULDEMINAS - Câmpus Muzambinho
-// Ciência da Computação - 4º Período (2023/02)
+// Ciência da Computação - 4º Período (2023/2)
 // Linguagens de Programação II (LPII)
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
 
+// Lendo informações de 2 funcionários e calculando seus respectivos salários por meio de vetores (sem a criação de uma classe Funcionario).
+
 import java.util.*;
 
 public class Exercicio4 {
+
+    // Método para calcular o salário do funcionário (Horas trabalhadas * Valor por hora):
     
     public static double Calculo(double x, double y) {
         
@@ -16,17 +20,21 @@ public class Exercicio4 {
     }
     
     public static void main(String[] args) {
+
+        // n -> Número de funcionários a terem seus respectivos salários calculados.
+
+        int n = 2;
+
+        // Declarando os vetores referentes a cada tipo de informação dos funcionários:
         
-        Vector<Integer> idFuncionario = new Vector<Integer>(2);
-        Vector<Double> HorasTrabalhadas = new Vector<Double>(2);
-        Vector<Double> ValorPorHora = new Vector<Double>(2);
-        Vector<Double> Salario = new Vector<Double>(2);
+        Vector<Integer> idFuncionario = new Vector<Integer>(n);
+        Vector<Double> HorasTrabalhadas = new Vector<Double>(n);
+        Vector<Double> ValorPorHora = new Vector<Double>(n);
+        Vector<Double> Salario = new Vector<Double>(n);
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); System.out.println();
         
-        System.out.println(" ================== Informações do Funcionário ==================\n");
-        
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < n; i++) {
             
             System.out.println(" # Inserção de informações para o " + (i + 1) + "º funcionário\n");
 
@@ -44,17 +52,21 @@ public class Exercicio4 {
         
             Salario.add(Calculo(HorasTrabalhadas.get(i), ValorPorHora.get(i)));
             
-            System.out.println("-----------------------------------------------------------------\n");
+            if (i != n - 1) System.out.println("----------------------------------------------------------------\n");
+
+        }
+
+        System.out.println("================================================================\n");
+
+        for (int i = 0; i < n; i++) {
 
             System.out.println(" # Resultados para o " + (i + 1) + "º funcionário\n");
         
             System.out.println(" O número de identificação do funcionário é: " + idFuncionario.get(i) + "\n");
         
-            System.out.println(" O salário do funcionário é: R$ " + String.format("%.2f", Salario.get(i)));
+            System.out.println(" O salário do funcionário é: R$ " + String.format("%.2f", Salario.get(i)) + "\n");
             
-            if (i == 0) System.out.println();
-            
-            if (i != 1) System.out.println("_________________________________________________________________\n");
+            if (i != n - 1) System.out.println("----------------------------------------------------------------\n");
             
         }
         

@@ -58,7 +58,7 @@ public class Funcionario {
     
     // Método para calcular o salário do funcionário (Horas trabalhadas * Valor por hora):
 
-    public static double Calculo(double x, double y) {
+    public double Calculo(double x, double y) {
         
         return x * y;
         
@@ -77,6 +77,8 @@ public class Funcionario {
         System.out.println(" > Email: " + this.Email + "\n");
         System.out.println(" > Endereço: " + this.Endereco + "\n");
         System.out.println(" > Escolaridade: " + this.Escolaridade + "\n");
+        System.out.println(" > Horas trabalhadas: " + String.format("%.1f", this.HorasTrabalhadas) + "\n");
+        System.out.println(" > Valor por hora: R$ " + String.format("%.2f", this.ValorPorHora) + "\n");
         System.out.println(" > Salário: R$ " + String.format("%.2f", this.Salario) + "\n");
         System.out.println(" > Cargo: " + this.Cargo + "\n");
         System.out.println(" > Entrada da empresa: " + this.EntradaEmpresa + "\n");
