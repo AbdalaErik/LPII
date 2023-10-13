@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 class Exercicio6 {
     
-    static void Menu () {
+    public static void Menu () {
         
         System.out.println("|=============== Calculadora Básica ===============|");
         System.out.println("|                                                  |");
@@ -133,7 +133,7 @@ class Exercicio6 {
                     
                     resultado = Soma();
                     
-                    System.out.println(" O resultado da soma é: " + String.format("%.3f", resultado) + "\n");
+                    System.out.println(" O resultado da soma é: " + String.format("%.2f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -149,7 +149,7 @@ class Exercicio6 {
                     
                     resultado = Subtracao();
                     
-                    System.out.println(" O resultado da subtração é: " + String.format("%.3f", resultado) + "\n");
+                    System.out.println(" O resultado da subtração é: " + String.format("%.2f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -165,7 +165,7 @@ class Exercicio6 {
                     
                     resultado = Multiplicacao();
                     
-                    System.out.println(" O resultado da multiplicação é: " + String.format("%.3f", resultado) + "\n");
+                    System.out.println(" O resultado da multiplicação é: " + String.format("%.2f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
@@ -181,7 +181,7 @@ class Exercicio6 {
                     
                     resultado = Divisao();
                     
-                    System.out.println(" O resultado da divisão é: " + String.format("%.3f", resultado) + "\n");
+                    System.out.println(" O resultado da divisão é: " + String.format("%.2f", resultado) + "\n");
                     
                     System.out.print(" Pressione ENTER para continuar.");
                     
