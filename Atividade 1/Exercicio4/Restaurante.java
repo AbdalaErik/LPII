@@ -21,8 +21,8 @@ public class Restaurante extends Empresa {
     // Método construtor com parâmetros:
 
     public Restaurante(String nome, String endereco, String cidade, String estado,
-                   String cep, String telefone, String avaliacaoMediaClientes,
-                   boolean reservasOnline) {
+                       String cep, String telefone, String avaliacaoMediaClientes,
+                       boolean reservasOnline) {
 
         super(nome, endereco, cidade, estado, cep, telefone);
 

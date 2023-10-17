@@ -21,8 +21,8 @@ public class Banco extends Empresa {
     // Método construtor com parâmetros:
 
     public Banco(String nome, String endereco, String cidade, String estado,
-                   String cep, String telefone, int numeroCaixasEletronicos,
-                   int numeroClientes) {
+                 String cep, String telefone, int numeroCaixasEletronicos,
+                 int numeroClientes) {
 
         super(nome, endereco, cidade, estado, cep, telefone);
 
