@@ -21,8 +21,8 @@ public class Farmacia extends Empresa {
     // Método construtor com parâmetros:
 
     public Farmacia(String nome, String endereco, String cidade, String estado,
-                   String cep, String telefone, String horarioFuncionamento,
-                   int numeroFuncionarios) {
+                    String cep, String telefone, String horarioFuncionamento,
+                    int numeroFuncionarios) {
 
         super(nome, endereco, cidade, estado, cep, telefone);
 
