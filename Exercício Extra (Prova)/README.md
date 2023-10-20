@@ -52,5 +52,6 @@ public class pneu {
 
   
 }
+
+// Crie as classes carro e moto com construtor, atributo pneu, pelo menos dois atributos novos e o método Imprimir.
 ```
-Crie as classes carro e moto com construtor, atributo pneu, pelo menos dois atributos novos e o método Imprimir.
