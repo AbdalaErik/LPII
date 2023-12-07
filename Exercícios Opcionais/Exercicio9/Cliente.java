@@ -7,6 +7,8 @@
 
 // Adaptando a classe Cliente para ser uma extensão/especialização da classe Pessoa:
 
+package Exercicio9;
+
 public class Cliente extends Pessoa {
     
     String Login;
