@@ -7,6 +7,8 @@
 
 // Criando a classe Funcionario:
 
+package Exercicio5;
+
 public class Funcionario {
     
     int idFuncionario;
