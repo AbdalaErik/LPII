@@ -7,6 +7,8 @@
 
 // Adaptando o código dos Exercícios 3 e 4 para que seja criada uma classe Funcionario.
 
+package Exercicio5;
+
 import java.util.*;
 
 public class Exercicio5 {
