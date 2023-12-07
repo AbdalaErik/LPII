@@ -7,6 +7,8 @@
 
 // Criando a classe Pessoa:
 
+package Exercicio9;
+
 public class Pessoa {
 
     String Nome;
