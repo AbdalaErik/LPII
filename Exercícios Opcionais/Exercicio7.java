@@ -5,11 +5,13 @@
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
 
-// Criando uma calculadora de áreas de figuras planas (triângulo, círculo, trapézio, quadrado e retângulo).
+// Criar uma calculadora de áreas de figuras planas (triângulo, círculo, trapézio, quadrado e retângulo).
 
 import java.util.Scanner;
 
-class Exercicio7 {
+public class Exercicio7 {
+
+    static Scanner sc = new Scanner(System.in);
     
     public static void Menu () {
         
@@ -39,17 +41,15 @@ class Exercicio7 {
         
         double A, C;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Triângulo\n");
         
         System.out.print(" > Informe o valor da base (A): ");
         
-        A = s.nextDouble(); System.out.println();
+        A = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor da altura (C): ");
         
-        C = s.nextDouble(); System.out.println();
+        C = sc.nextDouble(); System.out.println();
         
         return (A * C) / 2;
         
@@ -59,13 +59,11 @@ class Exercicio7 {
         
         double C, pi = 3.14159;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Círculo\n");
         
         System.out.print(" > Informe o valor do raio (C): ");
         
-        C = s.nextDouble(); System.out.println();
+        C = sc.nextDouble(); System.out.println();
         
         return pi * C * C;
         
@@ -75,21 +73,19 @@ class Exercicio7 {
         
         double A, B, C;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Trapézio\n");
         
         System.out.print(" > Informe o valor da base 1 (A): ");
         
-        A = s.nextDouble(); System.out.println();
+        A = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor da base 2 (B): ");
         
-        B = s.nextDouble(); System.out.println();
+        B = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor da altura (C): ");
         
-        C = s.nextDouble(); System.out.println();
+        C = sc.nextDouble(); System.out.println();
         
         return ((A + B) * C) / 2;
         
@@ -99,13 +95,11 @@ class Exercicio7 {
         
         double B;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Quadrado\n");
         
         System.out.print(" > Informe o valor do lado (B): ");
         
-        B = s.nextDouble(); System.out.println();
+        B = sc.nextDouble(); System.out.println();
         
         return B * B;
         
@@ -115,17 +109,15 @@ class Exercicio7 {
         
         double A, B;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Retângulo\n");
         
         System.out.print(" > Informe o valor do lado 1 (A): ");
         
-        A = s.nextDouble(); System.out.println();
+        A = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor do lado 2 (B): ");
         
-        B = s.nextDouble(); System.out.println();
+        B = sc.nextDouble(); System.out.println();
         
         return A * B;
         
@@ -134,8 +126,6 @@ class Exercicio7 {
     public static void main(String[] args) {
         
         int x; double Area;
-
-        Scanner sc = new Scanner(System.in);
         
         do {
             
@@ -143,19 +133,17 @@ class Exercicio7 {
             
             x = sc.nextInt(); System.out.println();
         
-            switch (x) {
+            switch(x) {
                 
                 case 1:
                     
                     System.out.print("\033[H\033[2J");
                     
-                    Area = Triangulo();
+                    Area = Triangulo(); sc.nextLine();
                     
-                    System.out.println(" Área do Triângulo: " + String.format("%.3f", Area) + "\n");
+                    System.out.println(" - Área do Triângulo: " + String.format("%.3f", Area) + "\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc1 = new Scanner(System.in); sc1.nextLine(); 
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -165,13 +153,11 @@ class Exercicio7 {
                     
                     System.out.print("\033[H\033[2J");
                     
-                   Area = Circulo();
+                   Area = Circulo(); sc.nextLine();
                     
-                    System.out.println(" Área do Círculo: " + String.format("%.3f", Area) + "\n");
+                    System.out.println(" - Área do Círculo: " + String.format("%.3f", Area) + "\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc2 = new Scanner(System.in); sc2.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -181,13 +167,11 @@ class Exercicio7 {
                     
                     System.out.print("\033[H\033[2J");  
                     
-                    Area = Trapezio();
+                    Area = Trapezio(); sc.nextLine();
                     
-                    System.out.println(" Área do Trapézio: " + String.format("%.3f", Area) + "\n");
+                    System.out.println(" - Área do Trapézio: " + String.format("%.3f", Area) + "\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc3 = new Scanner(System.in); sc3.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -197,13 +181,11 @@ class Exercicio7 {
                     
                     System.out.print("\033[H\033[2J");  
                     
-                    Area = Quadrado();
+                    Area = Quadrado(); sc.nextLine();
                     
-                    System.out.println(" Área do Quadrado: " + String.format("%.3f", Area) + "\n");
+                    System.out.println(" - Área do Quadrado: " + String.format("%.3f", Area) + "\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc4 = new Scanner(System.in); sc4.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -213,13 +195,11 @@ class Exercicio7 {
                     
                     System.out.print("\033[H\033[2J");  
                     
-                    Area = Retangulo();
+                    Area = Retangulo(); sc.nextLine();
                     
-                    System.out.println(" Área do Retângulo: " + String.format("%.3f", Area) + "\n");
+                    System.out.println(" - Área do Retângulo: " + String.format("%.3f", Area) + "\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc5 = new Scanner(System.in); sc5.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -231,11 +211,9 @@ class Exercicio7 {
                 
                 default:
                 
-                    System.out.println("  Opção inválida!\n");
+                    System.out.println("  Opção inválida! Escolha novamente.\n"); sc.nextLine();
                 
-                    System.out.print("  Pressione ENTER para continuar.");
-                    
-                    Scanner sc0 = new Scanner(System.in); sc0.nextLine();
+                    System.out.print("  Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -243,7 +221,7 @@ class Exercicio7 {
             
             }
             
-        } while (x != 6);
+        } while(x != 6);
 
         sc.close();
         

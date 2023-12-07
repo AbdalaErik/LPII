@@ -5,11 +5,13 @@
 // Docente: Fernanda Maria Ribeiro
 // Discente: Erik Bolonha Abdala
 
-// Criando uma calculadora com operações básicas (soma, subtração, multiplicação e divisão).
+// Criar uma calculadora com operações básicas (soma, subtração, multiplicação e divisão).
 
 import java.util.Scanner;
 
-class Exercicio6 {
+public class Exercicio6 {
+
+    static Scanner sc = new Scanner(System.in);
     
     public static void Menu () {
         
@@ -37,17 +39,15 @@ class Exercicio6 {
         
         double x, y;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Soma\n");
         
         System.out.print(" > Informe o primeiro valor (x): ");
         
-        x = s.nextDouble(); System.out.println();
+        x = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o segundo valor (y): ");
         
-        y = s.nextDouble(); System.out.println();
+        y = sc.nextDouble(); System.out.println();
         
         return x + y;
         
@@ -57,17 +57,15 @@ class Exercicio6 {
         
         double x, y;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Subtração\n");
         
         System.out.print(" > Informe o valor do minuendo (x): ");
         
-        x = s.nextDouble(); System.out.println();
+        x = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor do subtraendo (y): ");
         
-        y = s.nextDouble(); System.out.println();
+        y = sc.nextDouble(); System.out.println();
         
         return x - y;
         
@@ -77,17 +75,15 @@ class Exercicio6 {
         
         double x, y;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Multiplicação\n");
         
         System.out.print(" > Informe o valor do multiplicando (x): ");
         
-        x = s.nextDouble(); System.out.println();
+        x = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor do multiplicador (y): ");
         
-        y = s.nextDouble(); System.out.println();
+        y = sc.nextDouble(); System.out.println();
         
         return x * y;
         
@@ -97,17 +93,15 @@ class Exercicio6 {
         
         double x, y;
         
-        Scanner s = new Scanner(System.in);
-        
         System.out.println("\n # Divisão\n");
         
         System.out.print(" > Informe o valor do dividendo (x): ");
         
-        x = s.nextDouble(); System.out.println();
+        x = sc.nextDouble(); System.out.println();
         
         System.out.print(" > Informe o valor do divisor (y): ");
         
-        y = s.nextDouble(); System.out.println();
+        y = sc.nextDouble(); System.out.println();
         
         return x / y;
         
@@ -116,8 +110,6 @@ class Exercicio6 {
     public static void main(String[] args) {
         
         int x; double resultado;
-
-        Scanner sc = new Scanner(System.in);
         
         do {
             
@@ -125,19 +117,17 @@ class Exercicio6 {
             
             x = sc.nextInt(); System.out.println();
         
-            switch (x) {
+            switch(x) {
                 
                 case 1:
                     
                     System.out.print("\033[H\033[2J");
                     
-                    resultado = Soma();
+                    resultado = Soma(); sc.nextLine();
                     
-                    System.out.println(" O resultado da soma é: " + String.format("%.2f", resultado) + "\n");
+                    System.out.println(" - O resultado da soma é " + String.format("%.2f", resultado) + ".\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc1 = new Scanner(System.in); sc1.nextLine(); 
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -147,13 +137,11 @@ class Exercicio6 {
                     
                     System.out.print("\033[H\033[2J");
                     
-                    resultado = Subtracao();
+                    resultado = Subtracao(); sc.nextLine();
                     
-                    System.out.println(" O resultado da subtração é: " + String.format("%.2f", resultado) + "\n");
+                    System.out.println(" - O resultado da subtração é " + String.format("%.2f", resultado) + ".\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc2 = new Scanner(System.in); sc2.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -163,13 +151,11 @@ class Exercicio6 {
                     
                     System.out.print("\033[H\033[2J");  
                     
-                    resultado = Multiplicacao();
+                    resultado = Multiplicacao(); sc.nextLine();
                     
-                    System.out.println(" O resultado da multiplicação é: " + String.format("%.2f", resultado) + "\n");
+                    System.out.println(" - O resultado da multiplicação é " + String.format("%.2f", resultado) + ".\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc3 = new Scanner(System.in); sc3.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -179,13 +165,11 @@ class Exercicio6 {
                     
                     System.out.print("\033[H\033[2J");  
                     
-                    resultado = Divisao();
+                    resultado = Divisao(); sc.nextLine();
                     
-                    System.out.println(" O resultado da divisão é: " + String.format("%.2f", resultado) + "\n");
+                    System.out.println(" - O resultado da divisão é " + String.format("%.2f", resultado) + ".\n");
                     
-                    System.out.print(" Pressione ENTER para continuar.");
-                    
-                    Scanner sc4 = new Scanner(System.in); sc4.nextLine();
+                    System.out.print(" Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -197,11 +181,9 @@ class Exercicio6 {
                 
                 default:
                 
-                    System.out.println("  Opção inválida!\n");
+                    System.out.println("  Opção inválida! Escolha novamente.\n"); sc.nextLine();
                 
-                    System.out.print("  Pressione ENTER para continuar.");
-                    
-                    Scanner sc0 = new Scanner(System.in); sc0.nextLine();
+                    System.out.print("  Pressione ENTER para continuar."); sc.nextLine();
                     
                     System.out.print("\033[H\033[2J");
                     
@@ -209,7 +191,7 @@ class Exercicio6 {
             
             }
             
-        } while (x != 5);
+        } while(x != 5);
 
         sc.close();
         
