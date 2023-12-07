@@ -11,6 +11,8 @@
 // de 2 objetos da classe Funcionario e 2 objetos da classe Cliente. E, além de ainda calcular o salário do funcionário, imprime
 // todos os atributos das classes por meio de métodos próprios.
 
+package Exercicio8;
+
 import java.util.*;
 
 public class Exercicio8 {
