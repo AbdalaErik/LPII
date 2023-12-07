@@ -7,6 +7,8 @@
 
 // Adaptando a classe Funcionario para ser uma extensão/especialização da classe Pessoa:
 
+package Exercicio9;
+
 public class Funcionario extends Pessoa {
     
     int idFuncionario;
