@@ -7,6 +7,8 @@
 
 // Criando a classe Cliente:
 
+package Exercicio8;
+
 public class Cliente {
     
     String CPF;
