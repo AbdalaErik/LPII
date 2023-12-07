@@ -7,6 +7,8 @@
 
 // Ampliando a classe Funcionario:
 
+package Exercicio8;
+
 public class Funcionario {
     
     int idFuncionario;
